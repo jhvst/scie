@@ -13,30 +13,15 @@ Scie is a research about how to build simple code identify engine for different 
 """
 categories = ["text-processing", "command-line-interface", "development-tools", "parser-implementations", "parsing"]
 exclude = [
-    "vscode-tests/*",
-    "benchmark/*",
-    "fixtures/*",
-    ".github/*",
-    ".gitattributes",
-    ".adr.json",
-    ".cargo_vcs_info.json",
-
-    # vscode
-    "**/snippets/*",
-    "extensions/**/test/*",
-    "**/.vscodeignore",
-    "**/package.nls.json",
-    "**/language-configuration.json",
-    "**/*.language-configuration.json",
+    "extensions",
+    ".github",
 ]
 
 [dependencies]
 
 [workspace]
 members = [
-    "benchmark",
     "scie-grammar",
-    "scie-infra",
     "scie-onig",
     "scie-scanner",
 ]

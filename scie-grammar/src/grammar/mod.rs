@@ -39,8 +39,6 @@ mod tests {
     #[test]
     fn should_build_oniguruma_makefile() {
         let root_dir = PathBuf::from(env!("CARGO_MANIFEST_DIR"))
-            .parent()
-            .unwrap()
             .to_path_buf();
         let lang_test_dir = root_dir
             .join("fixtures")
@@ -57,8 +55,6 @@ mod tests {
     #[test]
     fn should_build_from_simple_json() {
         let root_dir = PathBuf::from(env!("CARGO_MANIFEST_DIR"))
-            .parent()
-            .unwrap()
             .to_path_buf();
         let lang_test_dir = root_dir
             .join("fixtures")
@@ -75,8 +71,6 @@ mod tests {
     #[test]
     fn should_build_from_simple_javascript() {
         let root_dir = PathBuf::from(env!("CARGO_MANIFEST_DIR"))
-            .parent()
-            .unwrap()
             .to_path_buf();
         let lang_test_dir = root_dir
             .join("fixtures")
@@ -96,8 +90,6 @@ mod tests {
     #[test]
     fn should_build_from_simple_csharp() {
         let root_dir = PathBuf::from(env!("CARGO_MANIFEST_DIR"))
-            .parent()
-            .unwrap()
             .to_path_buf();
         let lang_test_dir = root_dir
             .join("fixtures")
@@ -115,8 +107,6 @@ mod tests {
     #[test]
     fn should_build_from_simple_rust() {
         let root_dir = PathBuf::from(env!("CARGO_MANIFEST_DIR"))
-            .parent()
-            .unwrap()
             .to_path_buf();
         let lang_test_dir = root_dir
             .join("fixtures")
