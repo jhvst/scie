@@ -35,13 +35,8 @@ exclude = [
 [workspace]
 members = [
     "benchmark",
-    "scie-bingen",
-    "scie-detector",
     "scie-grammar",
     "scie-infra",
-    "scie-model",
     "scie-onig",
     "scie-scanner",
-    "scie-cli",
-    "scie-core"
 ]

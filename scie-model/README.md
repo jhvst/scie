@@ -1,1 +1,0 @@
-# Scie Model
