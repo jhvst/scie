@@ -38,8 +38,6 @@ mod tests {
     #[test]
     fn benchmark() {
         let root_dir = PathBuf::from(env!("CARGO_MANIFEST_DIR"))
-            .parent()
-            .unwrap()
             .to_path_buf();
 
         // run(root_dir.clone(), "json", "JSON.tmLanguage.json", "JavaScript.tmLanguage.json.txt");
@@ -60,7 +58,7 @@ mod tests {
             .join(lang)
             .join("syntaxes")
             .join(lang_file);
-        let code_dir = root_dir.join("scie-grammar").join("samples").join(code_file);
+        let code_dir = root_dir.join("samples").join(code_file);
         let code = read_code(&code_dir);
 
         run_execute(lang_spec_dir, code)

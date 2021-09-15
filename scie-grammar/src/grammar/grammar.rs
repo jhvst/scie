@@ -622,7 +622,6 @@ impl Grammar {
 
     pub fn for_test(grammar_path: &str) -> Self {
         let mut path = PathBuf::from(env!("CARGO_MANIFEST_DIR"));
-        path = PathBuf::from(path.parent().unwrap());
         path.push(grammar_path);
 
         println!("{:?}", path);

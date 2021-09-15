@@ -1,9 +1,11 @@
-use crate::scanner::onig_string::OnigString;
 use core::ptr;
+use std::os::raw::c_int;
+
 use scie_onig::{
     createOnigScanner, findNextOnigScannerMatch, freeOnigScanner, OnigScanner, MAX_REGIONS,
 };
-use std::os::raw::c_int;
+
+use crate::scanner::onig_string::OnigString;
 
 pub type Pointer = i32;
 

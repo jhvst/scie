@@ -1,6 +1,5 @@
 #[macro_use]
 extern crate serde_derive;
-
 extern crate libc;
 extern crate scie_onig;
 

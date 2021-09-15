@@ -1,3 +1,0 @@
-[submodule "scie-onig/libonigvs/oniguruma"]
-	path = scie-onig/libonigvs/oniguruma
-	url = https://github.com/kkos/oniguruma.git
